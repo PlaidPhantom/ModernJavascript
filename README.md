@@ -10,12 +10,12 @@ With Javascript moving so quickly there are a lot of new features available in t
 
 ## Topics
 
-1. Arrow Functions
-1. Rest & Spread Operators
-1. Let & Const
 1. Classes
-1. Promises
-1. Async/Await
-1. Symbols
-1. Iterators and Generators
-1. Async Iterators
+2. Arrow Functions
+3. Rest & Spread Operators
+4. Let & Const
+5. Promises
+6. Async/Await
+7. Symbols
+8. Iterators and Generators
+9. Async Iterators
