@@ -63,9 +63,13 @@ of the logic is somewhat easier to follow:
 
 ```javascript
 // new Fetch API
-fetch('/somedata')                 // make api call
-.then(response => response.json()) // receive response as json
-.then(data => {})                  // do something with data
-.catch(error => {
-    // handle error
-});
+function() {
+    // if someone might wait on your function, return a promise that they can chain off of
+    return fetch('/somedata')                 // make api call
+    .then(response => response.json()) // receive response as json (returns a promise -- nested promises get unwrapped!)
+    .then(data => { return data.stuff; })                  // do something with data
+    .catch(error => {
+        // handle error
+    });
+}
+```
