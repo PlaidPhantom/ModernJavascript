@@ -34,7 +34,6 @@ create an object by calling the function using `new`.  This gives us something c
 a traditional class:
 
 ```javascript
-
 function Person(n) {
     this.name = n;
 }
@@ -46,13 +45,11 @@ Person.prototype.getName = function() {
 var c = new Person('Charlie');
 
 console.log(c.getName()); // "Charlie"
-
 ```
 
 This is still kind of an ugly syntax, so now we _actually_ get a class syntax:
 
 ```javascript
-
 class Person {
     constructor (name) {
         this.name = name;
@@ -62,5 +59,4 @@ class Person {
         return this.name;
     }
 }
-
 ```
